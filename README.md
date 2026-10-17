@@ -72,6 +72,11 @@ macOS decides when widgets refresh. The widget asks for a new reading about ever
 
 See [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md).
 
+## Credits
+
+- **[pydexcom](https://github.com/gagebenne/pydexcom)** by Gage Benne (MIT). The original backend behind this widget runs on pydexcom. The PHP backend follows the Dexcom Share login flow, server URLs, application IDs, and trend values that pydexcom documents.
+- **[XcodeGen](https://github.com/yonaskolb/XcodeGen)** by Yonas Kolb (MIT) generates the Xcode project from `project.yml`.
+
 ## License
 
 MIT. See [`LICENSE`](LICENSE).

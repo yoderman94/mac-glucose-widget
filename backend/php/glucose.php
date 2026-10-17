@@ -6,6 +6,9 @@
  * reading in the JSON shape described in docs/API.md. Runs on any web host
  * with PHP 8+ and the cURL extension. No database needed.
  *
+ * The Dexcom Share flow, server URLs, application IDs, and trend values follow
+ * pydexcom by Gage Benne (MIT): https://github.com/gagebenne/pydexcom
+ *
  * Setup: copy config.example.php to config.php and fill it in.
  */
 
