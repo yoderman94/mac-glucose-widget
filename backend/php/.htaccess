@@ -1,0 +1,12 @@
+# Apache / cPanel hosts: pass the Authorization header to PHP (CGI/FastCGI strips it).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+# Never serve the config, cache, or examples.
+<FilesMatch "^(config\.php|config\.example\.php)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 /cache/

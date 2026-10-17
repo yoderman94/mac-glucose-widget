@@ -1,0 +1,8 @@
+config.env
+Widget/Config.generated.swift
+backend/php/config.php
+backend/php/cache/
+build/
+*.xcodeproj/
+.DS_Store
+xcuserdata/
